@@ -16,18 +16,18 @@ export default function Navbar() {
             <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div className="navbar-nav ml-auto p-4">
                     <a className="nav-item nav-link active" ><Link to ='/'>Home</Link></a>
-                    <a className="nav-item nav-link"><Link style={{"color":"white"}} to ='/about'>About</Link></a>
-                    <a className="nav-item nav-link"><Link style={{"color":"white"}} to ='/contact'>Contact</Link></a>
-                    <a className="nav-item nav-link"><Link style={{"color":"white"}} to ='/service'>Service</Link></a>
+                    <a className="nav-item nav-link "><Link  to ='/about'>About</Link></a>
+                    <a className="nav-item nav-link"><Link  to ='/contact'>Contact</Link></a>
+                    <a className="nav-item nav-link"><Link  to ='/service'>Service</Link></a>
                     <div className="nav-item dropdown">
-                        <a   className="nav-link dropdown-toggle" data-toggle="dropdown"><Link style={{"color":"white"}} to ='/pages'>Pages</Link></a>
+                        <a   className="nav-link dropdown-toggle" data-toggle="dropdown"><Link  to ='/pages'>Pages</Link></a>
                         <div className="dropdown-menu text-capitalize">
                             <a className="dropdown-item">Blogs</a>
                             <a className="dropdown-item">Testimonial</a>
                         </div>
                     </div>
-                    <a className="nav-item nav-link"><Link style={{"color":"white"}} to ='/register'>Register</Link></a>
-                    <a className="nav-item nav-link"><Link style={{"color":"white"}} to ='/login'>Login</Link></a>
+                    <a className="nav-item nav-link"><Link  to ='/register'>Register</Link></a>
+                    <a className="nav-item nav-link"><Link  to ='/login'>Login</Link></a>
                 </div>
             </div>
         </nav>

@@ -1,4 +1,6 @@
 import React,{useState} from "react";
+import axios from "axios";
+import { _apiurluser } from "../../shared/ApiConstants";
 
 export default function Register() {
   const [output,setOutput]=useState()
@@ -11,14 +13,26 @@ export default function Register() {
   const [gender,setGender]=useState();
 
   const handleSubmit=()=>{
-    setOutput("Successufully submitted...!");
-    setName("");
-    setEmail("");
-    setPassword("");
-    setMobile("");
-    setAddress("");
-    setCity("");
-  }
+    const userDetails={"name":name,
+                       "email":email,
+                       "password":password,
+                       "mobile":mobile,
+                       "address":address,
+                       "city":city,
+                       "gender":gender};
+
+    axios.post(_apiurluser+"save",userDetails).then((response)=>{
+      console.log("user details",userDetails);
+      console.log("response",response);
+      setOutput("User register successfully");
+      setName("");
+      setEmail("");
+      setPassword("");
+      setMobile("");
+      setAddress("");
+      setCity("");
+    });
+   }
 
   return (
     <div className="container-fluid py-5">

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import Auth from "../Auth/Auth";
 
 export default function Navbar() {
   const [navContent, setNavContent] = useState();
@@ -34,7 +35,7 @@ export default function Navbar() {
                         <span>{localStorage.getItem("email")}</span>
                       </a>
                       <a className="nav-item nav-link">
-                        <Link to="/login">Logout</Link>
+                        <Link to="/logout">Logout</Link>
                       </a>
                       
                     </div>
@@ -70,7 +71,7 @@ export default function Navbar() {
                         <span>{localStorage.getItem("email")}</span>
                         </a>
                         <a className="nav-item nav-link">
-                          <Link to="/login">Logout</Link>
+                          <Link to="/logout">Logout</Link>
                         </a>
                       </div>
                     </div>
@@ -140,6 +141,7 @@ export default function Navbar() {
   },[]);
   return (
     <div>
+      <Auth/>
       {navContent}
     </div>
   );

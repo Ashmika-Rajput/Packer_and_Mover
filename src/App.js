@@ -11,6 +11,7 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import UserHome from "./components/UserHome/UserHome";
 import AdminHome from "./components/AdminHome/AdminHome";
+import Logout from "./components/Logout/Logout";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/admin" element={<AdminHome />} />
         <Route path="/user" element={<UserHome/>} />
+        <Route path="/logout" element={<Logout/>} />
       </Routes>
       <Footer />
     </div>

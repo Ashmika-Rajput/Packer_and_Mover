@@ -9,6 +9,8 @@ import Service from "./components/Service/Service";
 import Register from "./components/Register/Register";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import UserHome from "./components/UserHome/UserHome";
+import AdminHome from "./components/AdminHome/AdminHome";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/service" element={<Service />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/admin" element={<AdminHome />} />
+        <Route path="/user" element={<UserHome/>} />
       </Routes>
       <Footer />
     </div>

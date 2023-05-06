@@ -16,20 +16,21 @@ export default function Login() {
     const userDetails={"email":email,"password":password};
 
     axios.post(_apiurluser+"login",userDetails).then((response)=>{
-     const userDetails=response.data.userDetails;
+      const userInfo=response.data.userDetails;
+      console.log('userInfo',userInfo);
      localStorage.setItem("token",response.data.token);
-     localStorage.setItem("_id",userDetails._id);
-     localStorage.setItem("name",userDetails.name);
-     localStorage.setItem("email",userDetails.email);
-     localStorage.setItem("password",userDetails.password);
-     localStorage.setItem("mobile",userDetails.mobile);
-     localStorage.setItem("address",userDetails.address);
-     localStorage.setItem("city",userDetails.city);
-     localStorage.setItem("gender",userDetails.gender);
-     localStorage.setItem("role",userDetails.role);
-     localStorage.setItem("info",userDetails.info);   
+     localStorage.setItem("_id",userInfo._id);
+     localStorage.setItem("name",userInfo.name);
+     localStorage.setItem("email",userInfo.email);
+     localStorage.setItem("password",userInfo.password);
+     localStorage.setItem("mobile",userInfo.mobile);
+     localStorage.setItem("address",userInfo.address);
+     localStorage.setItem("city",userInfo.city);
+     localStorage.setItem("gender",userInfo.gender);
+     localStorage.setItem("role",userInfo.role);
+     localStorage.setItem("info",userInfo.info);   
      
-     userDetails.role==="admin"?navigate("/admin"):navigate("/user");
+     userInfo.role==="admin"?navigate("/admin"):navigate("/user");
     
     }).catch((error)=>{
       setOutput("Invalid user or verify your account....");

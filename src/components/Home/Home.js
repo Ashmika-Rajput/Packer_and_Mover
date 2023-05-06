@@ -16,7 +16,7 @@ export default function Home() {
                 </div>
                 <div className="col-lg-4 py-5 py-lg-0" style={{"min-height": "500px"}}>
                     <div className="position-relative h-100">
-                        <img className="position-absolute w-100 h-100" src="assets/bg1.jpg" style={{"object-fit": "cover"}}/>
+                        <img className="position-absolute w-100 h-100" src="img/bg1.jpg" style={{"object-fit": "cover"}}/>
                     </div>
                 </div>
                 <div className="col-lg-4 py-0 py-lg-5">

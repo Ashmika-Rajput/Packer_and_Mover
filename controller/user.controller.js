@@ -29,7 +29,7 @@ export const fetch=async (req,res,next)=>{
 }
 
 export const deleteUser=async(req,res,next)=>{
-  var condition_obj=JSON.parse(req.body.condition_obj);          
+  var condition_obj=req.body;        
   var user = await UserSchemaModel.find(condition_obj);
   if(user.length!=0){
     let result = await UserSchemaModel.deleteMany(condition_obj); 
@@ -44,9 +44,9 @@ export const deleteUser=async(req,res,next)=>{
 
 
 export const updateUser=async(req,res,next)=>{
-  let userDetails = await UserSchemaModel.findOne(JSON.parse(req.body.condition_obj));
+  let userDetails = await UserSchemaModel.findOne(req.body.condition_obj);
   if(userDetails){
-     let user=await UserSchemaModel.updateOne(JSON.parse(req.body.condition_obj),{$set: JSON.parse(req.body.content_obj)});   
+     let user=await UserSchemaModel.updateOne(req.body.condition_obj,{$set: req.body.set_condition});   
      if(user)
       return res.status(201).json({"msg":"record updated successfully"});
      else
@@ -55,7 +55,6 @@ export const updateUser=async(req,res,next)=>{
   else
    return res.status(404).json({error: "Requested resource not available"});
 }
-
 
 export const login=async (req,res,next)=>{
   var userDetails=req.body;

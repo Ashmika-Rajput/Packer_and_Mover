@@ -12,6 +12,9 @@ import Contact from "./components/Contact/Contact";
 import UserHome from "./components/UserHome/UserHome";
 import AdminHome from "./components/AdminHome/AdminHome";
 import Logout from "./components/Logout/Logout";
+import ManageUsers from "./components/ManageUsers/ManageUsers";
+import EditProile from "./components/EditProile/EditProile";
+import ChangePassword from "./components/ChangePassword/ChangePassword";
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
         <Route path="/admin" element={<AdminHome />} />
         <Route path="/user" element={<UserHome/>} />
         <Route path="/logout" element={<Logout/>} />
+        <Route path="/managerusers" element={<ManageUsers/>} />
+        <Route path="/changepassword" element={<ChangePassword/>} />
+        <Route path="/editprofile" element={<EditProile/>} />
       </Routes>
       <Footer />
     </div>

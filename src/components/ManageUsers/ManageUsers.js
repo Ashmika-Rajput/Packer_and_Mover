@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import axios from "axios";
 import { _apiurluser } from "../../shared/ApiConstants";
 import { useNavigate } from 'react-router-dom';
@@ -8,10 +8,13 @@ export default function ManageUsers() {
 const [managerUsers,setManageUsers] =useState([])
 const navigate =useNavigate()
 
-axios.get(_apiurluser+"fetch?role=user").then((res)=>{
-  console.log('res',res.data);
-  setManageUsers(res.data)
+useEffect(()=>{
+  axios.get(_apiurluser+"fetch?role=user").then((res)=>{
+    console.log('res',res.data);
+    setManageUsers(res.data)
+  })
 })
+
 
 const handleUser=(_id,status) => {
   if(status === "block"){

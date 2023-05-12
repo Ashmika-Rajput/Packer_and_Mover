@@ -36,7 +36,10 @@ export default function Navbar() {
                       </a>
                       <a className="nav-item nav-link ">
                       <Link to="/managerusers">Manage User</Link>
-                    </a>
+                      </a>
+                      <a className="nav-item nav-link ">
+                      <Link to="/addcategory">Add Category</Link>
+                      </a>
                     <div className="nav-item dropdown">
                       <a className="nav-link dropdown-toggle" data-toggle="dropdown">
                         <Link to="/pages">Settings</Link>

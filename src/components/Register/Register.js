@@ -39,25 +39,27 @@ export default function Register() {
       <h2 > Register Here....</h2>
       <span style={{"color":"green"}}>{output}</span>
       <form>
-      <div class="form-group row">
+      <div class="form-group">
           <label for="name" class="col-sm-2 col-form-label">
             Name
           </label>
           <div class="col-sm-10">
             <input
               type="text"
+              class="form-control"
               id="name"
               value={name}
               onChange={e=>setName(e.target.value)}
             />
           </div>
         </div>
-        <div class="form-group row">
+        <div class="form-group">
           <label for="email" class="col-sm-2 col-form-label">
             Email
           </label>
           <div class="col-sm-10">
             <input
+              class="form-control"
               type="text"
               id="email"
               value={email}
@@ -65,38 +67,41 @@ export default function Register() {
             />
           </div>
         </div>
-        <div class="form-group row">
+        <div class="form-group">
           <label for="password" class="col-sm-2 col-form-label">
             Password
           </label>
           <div class="col-sm-10">
             <input
               type="password"
+              class="form-control"
               id="password"
               value={password}
               onChange={e=>setPassword(e.target.value)}
             />
           </div>
         </div>
-        <div class="form-group row">
+        <div class="form-group">
           <label for="mobile" class="col-sm-2 col-form-label">
             Mobile
           </label>
           <div class="col-sm-10">
             <input
               type="text"
+              class="form-control"
               id="mobile"
               value={mobile}
               onChange={e=>setMobile(e.target.value)}
             />
           </div>
         </div>
-        <div class="form-group row">
+        <div class="form-group">
           <label for="address" class="col-sm-2 col-form-label">
             Address
           </label>
           <div class="col-sm-10">
             <textarea
+              class="form-control"
               type="text"
               id="address"
               value={address}
@@ -104,12 +109,13 @@ export default function Register() {
             ></textarea>
           </div>
         </div>
-        <div class="form-group row">
+        <div class="form-group">
           <label for="city" class="col-sm-2 col-form-label">
             City
           </label>
           <div class="col-sm-10">
             <select
+              class="form-control"
               type="text"
               id="city"
               value={city}
@@ -121,6 +127,7 @@ export default function Register() {
             </select>
           </div>
         </div>
+        <br/>
         <div class="form-group row">
           <label for="gender" class="col-sm-2 col-form-label">
             Gender

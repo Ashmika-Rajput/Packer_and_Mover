@@ -46,7 +46,7 @@ export default function Login() {
     <h2 > Login Here....</h2>
     <span style={{"color":"green"}}>{output}</span>
     <form>
-      <div class="form-group row">
+      <div class="form-group">
         <label for="email" class="col-sm-2 col-form-label">
           Email
         </label>
@@ -54,17 +54,19 @@ export default function Login() {
           <input
             type="text"
             id="email"
+            class="form-control"
             value={email}
             onChange={e=>setEmail(e.target.value)}
           />
         </div>
       </div>
-      <div class="form-group row">
+      <div class="form-group">
         <label for="password" class="col-sm-2 col-form-label">
           Password
         </label>
         <div class="col-sm-10">
           <input
+           class="form-control"
             type="password"
             id="password"
             value={password}

@@ -15,6 +15,7 @@ import Logout from "./components/Logout/Logout";
 import ManageUsers from "./components/ManageUsers/ManageUsers";
 import EditProile from "./components/EditProile/EditProile";
 import ChangePassword from "./components/ChangePassword/ChangePassword";
+import AddCategory from "./components/AddCategory/AddCategory";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/managerusers" element={<ManageUsers/>} />
         <Route path="/changepassword" element={<ChangePassword/>} />
         <Route path="/editprofile" element={<EditProile/>} />
+        <Route path="/addcategory" element={<AddCategory/>} />
       </Routes>
       <Footer />
     </div>

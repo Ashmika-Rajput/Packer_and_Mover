@@ -17,7 +17,7 @@ export default function Service() {
                     <h1 className="mb-5">Local shifting</h1>
                     <div className="row align-items-center mb-5">
                         <div className="col-4 col-sm-3">
-                            <img className="w-100 rounded-circle mb-3 mb-sm-0" src="img/icon2.jpg" alt=""/>
+                            <img className="w-100 rounded-circle mb-3 mb-sm-0" src="assets/img/icon2.jpg" alt=""/>
                         </div>
                         <div className="col-8 col-sm-9">
                             <h4>1 BHK house shifting</h4>
@@ -26,7 +26,7 @@ export default function Service() {
                     </div>
                     <div className="row align-items-center mb-5">
                         <div className="col-4 col-sm-3">
-                            <img className="w-100 rounded-circle mb-3 mb-sm-0" src="img/icon2.jpg" alt=""/>
+                            <img className="w-100 rounded-circle mb-3 mb-sm-0" src="assets/img/icon2.jpg" alt=""/>
                             
                         </div>
                         <div className="col-8 col-sm-9">
@@ -36,7 +36,7 @@ export default function Service() {
                     </div>
                     <div className="row align-items-center mb-5">
                         <div className="col-4 col-sm-3">
-                            <img className="w-100 rounded-circle mb-3 mb-sm-0" src="img/icon2.jpg" alt=""/>
+                            <img className="w-100 rounded-circle mb-3 mb-sm-0" src="assets/img/icon2.jpg" alt=""/>
                            
                         </div>
                         <div className="col-8 col-sm-9">
@@ -49,7 +49,7 @@ export default function Service() {
                     <h1 className="mb-5">Domestic shifting(Other city)</h1>
                     <div className="row align-items-center mb-5">
                         <div className="col-4 col-sm-3">
-                            <img className="w-100 rounded-circle mb-3 mb-sm-0" src="img/icon2.jpg" alt=""/>
+                            <img className="w-100 rounded-circle mb-3 mb-sm-0" src="assets/img/icon2.jpg" alt=""/>
                         </div>
                         <div className="col-8 col-sm-9">
                             <h4>1 BHK house shifting</h4>
@@ -58,7 +58,7 @@ export default function Service() {
                     </div>
                     <div className="row align-items-center mb-5">
                         <div className="col-4 col-sm-3">
-                            <img className="w-100 rounded-circle mb-3 mb-sm-0" src="img/icon2.jpg" alt=""/>
+                            <img className="w-100 rounded-circle mb-3 mb-sm-0" src="assets/img/icon2.jpg" alt=""/>
                         </div>
                         <div className="col-8 col-sm-9">
                             <h4>2 BHK house shifting</h4>
@@ -67,7 +67,7 @@ export default function Service() {
                     </div>
                     <div className="row align-items-center mb-5">
                         <div className="col-4 col-sm-3">
-                            <img className="w-100 rounded-circle mb-3 mb-sm-0" src="img/icon2.jpg" alt=""/>
+                            <img className="w-100 rounded-circle mb-3 mb-sm-0" src="assets/img/icon2.jpg" alt=""/>
                         </div>
                         <div className="col-8 col-sm-9">
                             <h4>3 BHK house shifting</h4>

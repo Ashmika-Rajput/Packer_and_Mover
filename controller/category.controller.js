@@ -29,16 +29,16 @@ export var save=async (req,res,next)=>{
 }
 
 //method : GET  , data : in req body
-export var fetch=async (req,res,next)=>{
-  var condition_obj=req.body.condition_obj;
-  var cList = await CategorySchemaModel.find(condition_obj);
-  if(cList.length!=0)
-    return res.status(201).json(cList);
-  else
-    return res.status(500).json(cList);
-}
+// export var fetch=async (req,res,next)=>{
+//   var condition_obj=req.body.condition_obj;
+//   var cList = await CategorySchemaModel.find(condition_obj);
+//   if(cList.length!=0)
+//     return res.status(201).json(cList);
+//   else
+//     return res.status(500).json(cList);
+// }
 
-/*method : GET , data : Query string
+/*method : GET , data : Query string*/
 export var fetch=async (req,res,next)=>{
   var condition_obj=url.parse(req.url,true).query;
   var cList = await CategorySchemaModel.find(condition_obj);
@@ -46,7 +46,7 @@ export var fetch=async (req,res,next)=>{
     return res.status(201).json(cList);
   else
     return res.status(500).json(cList);
-}*/
+}
 
 export var deleteUser=async(req,res,next)=>{
   var id = req.params.id;

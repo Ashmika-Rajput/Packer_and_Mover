@@ -84,6 +84,9 @@ export default function Navbar() {
                         <Link to="/"> User  : </Link>
                         <span>{localStorage.getItem("email")}</span>
                         </a>
+                        <a className="nav-item nav-link">
+                          <Link to="/searchads">Search Ads</Link>
+                        </a>
                     <div className="nav-item dropdown">
                       <a className="nav-link dropdown-toggle" data-toggle="dropdown">
                         <Link to="/pages">Settings</Link>

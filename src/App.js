@@ -16,6 +16,7 @@ import ManageUsers from "./components/ManageUsers/ManageUsers";
 import EditProile from "./components/EditProile/EditProile";
 import ChangePassword from "./components/ChangePassword/ChangePassword";
 import AddCategory from "./components/AddCategory/AddCategory";
+import SearchAds from "./components/SearchAds/SearchAds";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/changepassword" element={<ChangePassword/>} />
         <Route path="/editprofile" element={<EditProile/>} />
         <Route path="/addcategory" element={<AddCategory/>} />
+        <Route path="/searchads" element={<SearchAds/>} />
       </Routes>
       <Footer />
     </div>

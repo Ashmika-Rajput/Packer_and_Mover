@@ -1,0 +1,17 @@
+#catmain
+{
+ min-height:300px;
+ width:600px;  
+}
+
+.catpart
+{
+ height:400px;
+ width: 300px;
+ float:left;
+}
+
+.catpart img
+{
+ border:1px solid black;    
+}

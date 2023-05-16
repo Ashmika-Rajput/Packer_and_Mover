@@ -17,6 +17,7 @@ import EditProile from "./components/EditProile/EditProile";
 import ChangePassword from "./components/ChangePassword/ChangePassword";
 import AddCategory from "./components/AddCategory/AddCategory";
 import SearchAds from "./components/SearchAds/SearchAds";
+import AddProducts from "./components/AddProducts/AddProducts";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path="/editprofile" element={<EditProile/>} />
         <Route path="/addcategory" element={<AddCategory/>} />
         <Route path="/searchads" element={<SearchAds/>} />
+        <Route path="/addproducts" element={<AddProducts/>} />
       </Routes>
       <Footer />
     </div>

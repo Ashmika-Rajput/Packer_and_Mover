@@ -3,11 +3,13 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import fileupload from 'express-fileupload';
 
+
 const app = express();
 
 //import routes for route level middleware
 import UserRouter from './routes/user.router.js'; 
 import CategoryRouter from './routes/category.router.js';
+import ProductRouter from './routes/product.router.js';
 
 //configuration to handle cross origin request
 app.use(cors());
@@ -24,6 +26,7 @@ app.use(bodyParser.urlencoded({
 //to link route in route level middleware
 app.use("/user",UserRouter);
 app.use("/category",CategoryRouter);
+app.use("/product",ProductRouter);
 
 
 app.listen(3001);

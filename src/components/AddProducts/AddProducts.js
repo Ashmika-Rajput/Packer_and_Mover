@@ -22,8 +22,7 @@ export default function AddProducts() {
     setFile(event.target.files[0])
   }
 
-  const handleSubmit =(event)=>{
-    event.preventDefault();
+  const handleSubmit =()=>{
     var formData = new FormData();
     formData.append("ptitle",productName);
     formData.append("catnm",categoryName);

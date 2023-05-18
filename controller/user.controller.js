@@ -3,6 +3,7 @@ import '../models/connection.js';
 import UserSchemaModel from '../models/user.model.js';
 import jwt from 'jsonwebtoken';
 import rs from 'randomstring';
+import sendEmail from './email.controller.js';
 
 
 export const save=async (req,res,next)=>{
@@ -13,7 +14,10 @@ export const save=async (req,res,next)=>{
   
  var user = await UserSchemaModel.create(userDetails);
  if(user)
-   return res.status(201).json({"status":true});
+ {
+  sendEmail(req.body.email,req.body.password)
+  return res.status(201).json({"status":true});
+ }
  else
    return res.status(500).json({"status": false});
 }
@@ -47,8 +51,8 @@ export const updateUser=async(req,res,next)=>{
   let userDetails = await UserSchemaModel.findOne(req.body.condition_obj);
   if(userDetails){
      let user=await UserSchemaModel.updateOne(req.body.condition_obj,{$set: req.body.set_condition});   
-     if(user)
-      return res.status(201).json({"msg":"record updated successfully"});
+     if(user)       
+     return res.status(201).json({"msg":"record updated successfully"});
      else
       return res.status(500).json({error: "Server Error"});
   }

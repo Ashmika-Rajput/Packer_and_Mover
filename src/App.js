@@ -18,6 +18,7 @@ import ChangePassword from "./components/ChangePassword/ChangePassword";
 import AddCategory from "./components/AddCategory/AddCategory";
 import SearchAds from "./components/SearchAds/SearchAds";
 import AddProducts from "./components/AddProducts/AddProducts";
+import VerifyUser from "./components/VerifyUser/VerifyUser";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path="/addcategory" element={<AddCategory/>} />
         <Route path="/searchads" element={<SearchAds/>} />
         <Route path="/addproducts" element={<AddProducts/>} />
+        <Route path="/verifyuser/:email" element={<VerifyUser/>} />
       </Routes>
       <Footer />
     </div>

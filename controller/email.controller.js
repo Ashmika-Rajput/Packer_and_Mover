@@ -14,9 +14,10 @@ var mailOptions = {
   from: 'ashmika1194@gmail.com',
   to: email,
   subject: 'Verification Email',
-  //html: '<a href="http://localhost:3000/verifyuser/"></a>'+email
-  //html:'<a href="http://localhost:3000/verifyuser/">Click here </a>'+email
-  html:"<h1>Welcome to Porter</h1><p>You have successfully registered on Porter , your login credentials are attached below</p><h3>Username : "+email+"</h3><h3>Password : "+password+"</h3><h2>Click on the link below to verify account</h2><a href='http://localhost:3000/verifyuser/"+email+"'>Link</a>",
+  //html:"<a href='http://localhost:3000/verifyuser/"+email+"'>Click here </a>",
+     //above linking is working,but without any content,simply click here link to verify user
+  html:"<h1>Welcome to Packers and Movers</h1><p>You have successfully registered, your login credentials are attached below</p><h3>Username : "+email+"</h3><h3>Password : "+password+"</h3><a href='http://localhost:3000/verifyuser/"+email+"'>Click on this link below to verify account</a>",
+    //this link is with content like welcome to packers and movers,username etc.
 };
 
 transporter.sendMail(mailOptions, function(error, info){
